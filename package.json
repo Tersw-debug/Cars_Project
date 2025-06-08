@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node": "^18.20.8"
+  },
+  "name": "cars",
+  "version": "1.0.0",
+  "main": "Page1.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "Page1",
+    "dev": "nodemon Page1"
+  },
+  "author": "M&M",
+  "license": "ISC",
+  "description": ""
+}

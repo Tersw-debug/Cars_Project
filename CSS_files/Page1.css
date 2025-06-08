@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --color_of_Cards: white;
+    --SHADOw: -2px 5px 4px #000;
+}
+
+html{scroll-behavior: smooth;}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 10vh;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25em;
+}
+.header__nav__a:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.header__nav__a{
+    padding: 0.3em;
+    background: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.header__input{
+    min-height: 25px;
+    max-height: 35px;
+    min-width: 10px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-repeat: no-repeat;
+}
+
+.main{
+    height: 150vh;
+}
+
+
+.main__ul{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.main__ul__li{
+    
+    margin-bottom: 3em;
+    margin-right: 1em;
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--SHADOw);
+
+}
+.main__ul__li:hover{
+    background-color: #ddd;
+    box-shadow: 0px 0px 10px #000;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+img{
+    border-radius: 10px;
+}
+
+.main__ul__li__a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+p{
+    background-color: whitesmoke;
+    border-radius: 23px;
+    height: 25px;
+    color:black;
+    text-align: center;
+
+}
+
+p:hover{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.footer{
+    padding: 3em;
+    background-color: black;
+
+}
+.footer__ul{
+    list-style-type: none;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__ul__a{
+    text-decoration: none;
+    color: darkgray;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 10px;
+}
+.footer__ul__a:hover{
+    color: whitesmoke;
+}
