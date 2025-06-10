@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: Arial, Helvetica, sans-serif;
+}
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -15,32 +21,47 @@ html{scroll-behavior: smooth;}
 
 
 
+
 .header{
     display: flex;
     justify-content: space-evenly;
     min-height: 10vh;
     background-color: black;
     padding: 1em;
+ 
 }
 
 .header__nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25em;
+    margin: auto;
+}
+
+.header__nav__a{
+    position: relative;
+    padding: 0 10px;
+    text-decoration: none;
+    color: darkgray;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 .header__nav__a:hover{
-    background-color: black;
-    color: white;
-    font-weight: bold;
+    color: whitesmoke
 }
-.header__nav__a{
-    padding: 0.3em;
-    background: whitesmoke;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
+.header__nav__a::after{
+    content: '';
+    position: absolute;
+    background-color: whitesmoke;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.5s ease;
+}
+
+.header__nav__a:hover::after{
+    width: 100%;
 }
 
 .header__input{
@@ -52,6 +73,7 @@ html{scroll-behavior: smooth;}
     border: 2px solid #ddd;
     background-repeat: no-repeat;
 }
+
 
 .main{
     height: 150vh;

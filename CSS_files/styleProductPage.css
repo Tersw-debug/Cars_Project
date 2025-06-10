@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 *::before,
 *::after{
@@ -75,9 +75,136 @@ html{scroll-behavior: smooth;}
 
 
 .main{
-    height: 150vh;
+    height: 250vh;
     padding: 2em;
 }
+
+.container__image{
+    margin: 3em;
+
+}
+.container__cart{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.container__cart__title{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-top: 0.6rem;
+}
+.container{
+    display: flex;    
+    flex-direction: column;
+    gap: 5em;
+    background-color: whitesmoke;
+    height: 60vh;
+}
+
+.container__image{
+    align-self: center;
+}
+
+.container__div__title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.container_div__ul1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5em;
+    align-content: flex-start;
+    list-style: none;
+}
+
+.container__dimensions__title{
+    font-size: 1.9em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.container_div__ul2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    align-content: flex-start;
+    list-style: none;
+}
+
+.container_div__ul__li_wordstyle{
+    font-weight: bold;
+    border-bottom: 0.0725rem solid #e0e4e3;
+    padding-bottom: 0.1rem;
+    width: 190px;
+}
+
+
+.row-border{
+    border-top: 1px solid black;
+    grid-column: 1 / 5;
+}
+
+
+.container__cart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 1em;
+}
+.main__container__button_favorite{
+    text-align: center;
+   text-decoration: none;
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 1.4em;
+   margin-right: 1em;
+}
+.main__container__button_cart{
+    border-radius: 10px;
+        background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+   text-decoration: none;
+   padding: 1.4em;
+}
+
+.main__container__button_cart:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.main__container__button_favorite:hover{
+   color: red;
+}
+.main__container__button_favorite:active{
+    font-weight: bold;
+   transform: scale(0.9);
+}
+.main__container__button_cart:active{
+    font-weight: bold;
+   transform: scale(0.9);
+}
+
+.container_div__ul__li__p{
+    position: relative;
+    bottom: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .footer{
     padding: 3em;
