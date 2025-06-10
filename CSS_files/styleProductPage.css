@@ -75,9 +75,14 @@ html{scroll-behavior: smooth;}
 
 
 .main{
-    height: 250vh;
+    height: 300vh;
     padding: 2em;
 }
+
+.product__name{
+    align-self: center;
+}
+
 
 .container__image{
     margin: 3em;
@@ -100,7 +105,7 @@ html{scroll-behavior: smooth;}
     flex-direction: column;
     gap: 5em;
     background-color: whitesmoke;
-    height: 60vh;
+    height: 80vh;
 }
 
 .container__image{
@@ -227,6 +232,8 @@ html{scroll-behavior: smooth;}
     background-color: black;
     border-radius: 10px;
 }
+
+
 .footer__ul__a:hover{
     color: whitesmoke;
 }
