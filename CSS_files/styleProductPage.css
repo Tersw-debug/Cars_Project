@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --color_of_Cards: white;
+    --SHADOw: -2px 5px 4px #000;
+}
+
+html{scroll-behavior: smooth;}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    background-color: black;
+    padding: 1em;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25em;
+}
+.header__nav__a:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.header__nav__a{
+    padding: 0.3em;
+    background: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.header__input{
+    min-height: 25px;
+    max-height: 35px;
+    min-width: 10px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-repeat: no-repeat;
+}
+
+
+.main{
+    height: 150vh;
+    padding: 2em;
+}
+
+.footer{
+    padding: 3em;
+    background-color: black;
+
+}
+.footer__ul{
+    list-style-type: none;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__ul__a{
+    text-decoration: none;
+    color: darkgray;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 10px;
+}
+.footer__ul__a:hover{
+    color: whitesmoke;
+}
