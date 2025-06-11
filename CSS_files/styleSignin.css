@@ -17,6 +17,10 @@
     --SHADOFONT: -2px 2px 5px #000;
     --SHADODROPBOX: drop-shadow(8px 8px 20px #000);
     --SMOOTHTRANSITION: cubic-bezier(0.86, -0.1, 0.27, 1.15);
+    --size: 1.5rem;
+    --radius: 0.3em;
+    --tspeed_fast: 150ms;
+    --tspeed_slow: 450ms;
 }
 
 html{scroll-behavior: smooth;}
@@ -94,16 +98,19 @@ html{scroll-behavior: smooth;}
 
 .form{
     place-self: center;
-    background-color: whitesmoke;
-    padding: 10em;
     box-shadow: var(--SHADOw);
-    border-radius: 10px;
+    max-width: calc(var(--size) * 20);
+    font-size: var(--size);
+    text-align: left;
+    padding-block: 0.5em;
+    border-radius: var(--radius);
+    padding-inline: 6em;
 }
 
 .form__title{
     text-align: center;
     font-size: 1.1em;
-    margin-bottom: 6em;
+    margin-bottom: 6em;    
 }
 
 
@@ -115,15 +122,20 @@ html{scroll-behavior: smooth;}
 }
 
 .form__input{
-
-    width: 100%;
-    padding: 0.5em;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    margin-bottom: 1em;
+    position: relative;
+     display: grid;
+    gap: 0.3em;
+    margin-block-start: 2em;
 }
 
+.form__label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    margin-inline: 0.45em;
+    position: absolute;
 
+}
 
 
 .footer{
