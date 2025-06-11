@@ -22,29 +22,31 @@
              </div>
     </header>
     <main class="main">
-        <form action="get" class="form">
-            <div class="form__title">
-                <h1>Sign In</h1>
-            </div>
-            <div class="form__input">
-                <label for="username" class="form__label">username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form__input">
-                <label for="email" class="form__label">email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form__input">
-                <label for="phone" class="form__label">phone</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form__input">
-                <label for="password" class="form__label">password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="form__button">Sign In</button>
+        <div class="container__form">    
+            <form action="get" class="form">
+                <div class="form__title">
+                    <h1>Sign In</h1>
+                </div>
+                <div class="form__input">
+                    <input type="text" id="username" class="input__form" name="username" required placeholder="username">
+                    <label for="username" class="form__label">username</label>
+                </div>
+                <div class="form__input">
+                    <input type="email" id="email" name="email" class="input__form" required placeholder="email">
+                    <label for="email" class="form__label">email</label>
+                </div>
+                <div class="form__input">
+                    <input type="tel" id="phone" name="phone" class="input__form" required placeholder="phone">
+                    <label for="phone" class="form__label">phone</label>
+                </div>
+                <div class="form__input">
+                    <input type="password" id="password" class="input__form" name="password" required placeholder="password">
+                    <label for="password" class="form__label">password</label>
+                </div>
+                <button type="submit" class="form__button">Sign In</button>
 
-        </form>
+            </form>
+        </div>
     </main>
       <footer class="footer">
         <ul class="footer__ul">

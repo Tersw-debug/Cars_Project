@@ -14,6 +14,7 @@
 :root{
     --color_of_Cards: white;
     --SHADOw: -2px 5px 4px #000;
+    --THIKSHADOW: -5px 8px 7px #000;
     --SHADOFONT: -2px 2px 5px #000;
     --SHADODROPBOX: drop-shadow(8px 8px 20px #000);
     --SMOOTHTRANSITION: cubic-bezier(0.86, -0.1, 0.27, 1.15);
@@ -21,6 +22,10 @@
     --radius: 0.3em;
     --tspeed_fast: 150ms;
     --tspeed_slow: 450ms;
+    --hue: 240;
+    --muted:var(--hue) 30% 99%;
+    --bg:var(--hue) 30% 70%;
+    --color:var(--hue) 30% 70%;
 }
 
 html{scroll-behavior: smooth;}
@@ -96,8 +101,17 @@ html{scroll-behavior: smooth;}
     padding: 2em;
 }
 
+.container__form {
+    margin-inline: max(calc((100vw - 70rem) / 2), 1.5rem);
+    display: grid;
+    text-align: center;
+    gap: 1.5vmax;
+}
+
+
 .form{
     place-self: center;
+    display: grid;
     box-shadow: var(--SHADOw);
     max-width: calc(var(--size) * 20);
     font-size: var(--size);
@@ -105,7 +119,15 @@ html{scroll-behavior: smooth;}
     padding-block: 0.5em;
     border-radius: var(--radius);
     padding-inline: 6em;
+    width: 100%;
 }
+
+.form:hover{
+    transition: all 0.2s ease;
+    transform: scale3d(1.05, 1.05, 1.05);
+    box-shadow: var(--THIKSHADOW);
+}
+
 
 .form__title{
     text-align: center;
@@ -115,7 +137,7 @@ html{scroll-behavior: smooth;}
 
 
 .form__title:hover {
-    filter: var(--SHADODROPBOX);
+    text-shadow: -5px 5px 1.9px #000;
     border-radius: 3em;
     transform: scale3d(1.05, 1.05, 1.05);
     transition: all 0.5s ease;
@@ -123,19 +145,58 @@ html{scroll-behavior: smooth;}
 
 .form__input{
     position: relative;
-     display: grid;
-    gap: 0.3em;
-    margin-block-start: 2em;
+    display: grid;
+    margin-bottom: 1.2rem;
+    margin-block-start: 0.7em;
 }
-
-.form__label {
+.form__label{
     text-transform: uppercase;
+    position: absolute;
     font-size: 0.7em;
+    left: -50px;
+    bottom: 6.8px;
     letter-spacing: 0.05em;
     margin-inline: 0.45em;
-    position: absolute;
-
+    padding: .01em .04em;
+    background-color: hsl(var(--muted));
+    transition: transform var(--tspeed_fast) var(--SMOOTHTRANSITION),
+    background-color var(--tspeed_fast) var(--SMOOTHTRANSITION);
 }
+
+
+
+
+.input__form{
+    place-self: center;
+    height: 150%;
+    width: 150%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.35em 0.55em;
+    font-size: 1.1rem;
+    box-shadow: 
+     0 0 0 -.1em hsl(var(--bg)),
+     0 0 0 -.2em hsl(var(--color) / 0.8);
+     transition: box-shadow var(--tspeed_slow) var(--SMOOTHTRANSITION);
+}
+.input__form:focus {
+    outline: none;
+    box-shadow: 
+     0 0 0 .2em hsl(var(--bg)),
+     0 0 0 .4em hsl(var(--color) / 0.8);
+}
+
+
+.input__form::placeholder{
+    opacity: 0;
+}
+
+
+.form__button{
+    margin: 1em;
+    padding: 0.5em 1em;
+}
+
 
 
 .footer{
