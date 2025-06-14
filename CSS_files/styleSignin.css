@@ -97,6 +97,8 @@ html{scroll-behavior: smooth;}
 
 .main{
     display: grid;
+    align-items: center;
+    text-align: center;
     height: 150vh;
     padding: 2em;
 }
@@ -104,6 +106,7 @@ html{scroll-behavior: smooth;}
 .container__form {
     margin-inline: max(calc((100vw - 70rem) / 2), 1.5rem);
     display: grid;
+    align-items: center;
     text-align: center;
     gap: 1.5vmax;
 }
@@ -112,7 +115,7 @@ html{scroll-behavior: smooth;}
 .form{
     place-self: center;
     display: grid;
-    box-shadow: var(--SHADOw);
+    
     max-width: calc(var(--size) * 20);
     font-size: var(--size);
     text-align: left;
@@ -188,17 +191,53 @@ html{scroll-behavior: smooth;}
 
 
 .input__form::placeholder{
-    opacity: 0;
+    opacity: 1;
 }
 
 
 .form__button{
     margin: 1em;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
+    background-color: hsl(var(--muted));
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: hsl(var(--color));
+    color: white;
+    box-shadow: var(--SHADOw);
+    transition: all 0.3s ease;
 }
 
 
+.login__div{
+    margin-inline: max(calc((100vw - 35rem) / 2), 1.5rem);
+    border-radius: 10px;
+    padding: 1em;
+    padding-top: 0.5em;
+}
+.login__div:hover{
+     
+    color: hsl(var(--color));
+    box-shadow: var(--SHADOw);
+    transition: all 0.3s ease;
+}
 
+
+.login__div__a{
+    text-decoration: none;
+    color: hsl(var(--muted));
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.login__div__a:hover{
+    background-color: hsl(var(--color));
+    color: white;
+}
 .footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
