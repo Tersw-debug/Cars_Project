@@ -26,6 +26,7 @@
     --muted:var(--hue) 30% 99%;
     --bg:var(--hue) 30% 70%;
     --color:var(--hue) 30% 70%;
+    --controlopacity: 0;
 }
 
 html{scroll-behavior: smooth;}
@@ -191,7 +192,7 @@ html{scroll-behavior: smooth;}
 
 
 .input__form::placeholder{
-    opacity: 1;
+    opacity: var(--controlopacity);
 }
 
 
