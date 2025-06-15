@@ -108,7 +108,6 @@ html{scroll-behavior: smooth;}
     margin-inline: max(calc((100vw - 70rem) / 2), 1.5rem);
     display: grid;
     align-items: center;
-    text-align: center;
     gap: 1.5vmax;
 }
 
@@ -152,6 +151,8 @@ html{scroll-behavior: smooth;}
     display: grid;
     margin-bottom: 1.2rem;
     margin-block-start: 0.7em;
+    margin-top: 1.7rem;
+
 }
 .form__label{
     text-transform: uppercase;

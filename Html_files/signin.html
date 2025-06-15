@@ -23,26 +23,27 @@
     </header>
     <main class="main">
         <div class="container__form">    
-            <form action="get" class="form">
+            <form action="get" id="form" class="form">
                 <div class="form__title">
                     <h1>Sign In</h1>
                 </div>
                 <div class="form__input">
-                    <input type="text" id="username" class="input__form" name="username" required placeholder="username">
+                    <input type="text" id="username" class="input__form" name="username"  placeholder="username">
                     <label for="username" id="label1" class="form__label">username</label>
                 </div>
                 <div class="form__input">
-                    <input type="email" id="email" name="email" class="input__form" required placeholder="email">
+                    <input type="email" id="email" name="email" class="input__form"  placeholder="email">
                     <label for="email" id="label2" class="form__label">email</label>
                 </div>
                 <div class="form__input">
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input__form" required placeholder="phone">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="input__form"  placeholder="phone">
                     <label for="phone" id="label3" class="form__label">phone</label>
                 </div>
                 <div class="form__input">
-                    <input type="password" id="password" class="input__form" name="password" required placeholder="password">
+                    <input type="password" id="password" class="input__form" name="password" placeholder="password">
                     <label for="password" id="label4" class="form__label">password</label>
                 </div>
+                <div id="message__error"></div>
                 <button type="submit" class="form__button">Sign In</button>
             </form>
         </div>
