@@ -100,7 +100,7 @@ if(form__signin){
             event.preventDefault();
         }
 
-        if(input__username.value[0] === '1') {
+        if(Number.isInteger(parseInt(input__username.value[0]))) {
             message__error.style.display = "block";
             message__content.textContent = "username cannot start with number.";
             message__content.style.setProperty("margin-right", "-12rem");
@@ -112,7 +112,10 @@ if(form__signin){
             }
             event.preventDefault();
         }
-         
+        else{
+            message__error.style.display = "none";
+
+        }
     });
 
 }
