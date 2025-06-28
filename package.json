@@ -1,14 +1,15 @@
 {
   "dependencies": {
-    "node": "^18.20.8"
+    "express": "^5.1.0",
+    "node": "^18.20.8",
+    "nodemon": "^3.1.10"
   },
   "name": "cars",
   "version": "1.0.0",
-  "main": "Page1.js",
-  "devDependencies": {},
+  "main": "server.js",
   "scripts": {
-    "start": "Page1",
-    "dev": "nodemon Page1"
+    "start": "server",
+    "dev": "nodemon server"
   },
   "author": "M&M",
   "license": "ISC",
