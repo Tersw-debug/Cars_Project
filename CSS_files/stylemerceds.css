@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_of_Cards: white;
+    --SHADOw: -2px 5px 4px #000;
+}
+
+html{scroll-behavior: smooth;}
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    background-color: black;
+    padding: 1em;
+ 
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header__nav__a{
+    position: relative;
+    padding: 0 10px;
+    text-decoration: none;
+    color: darkgray;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.header__nav__a:hover{
+    color: whitesmoke
+}
+.header__nav__a::after{
+    content: '';
+    position: absolute;
+    background-color: whitesmoke;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.5s ease;
+}
+
+.header__nav__a:hover::after{
+    width: 100%;
+}
+
+.header__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+
+
+.header__input{
+    min-height: 25px;
+    max-height: 35px;
+    min-width: 10px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-repeat: no-repeat;
+}
+
