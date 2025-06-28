@@ -14,10 +14,22 @@
 :root{
     --color_of_Cards: white;
     --SHADOw: -2px 5px 4px #000;
+    --THIKSHADOW: -5px 8px 7px #000;
+    --SHADOFONT: -2px 2px 5px #000;
+    --SHADODROPBOX: drop-shadow(8px 8px 20px #000);
+    --SMOOTHTRANSITION: cubic-bezier(0.86, -0.1, 0.27, 1.15);
+    --size: 1.5rem;
+    --radius: 0.3em;
+    --tspeed_fast: 150ms;
+    --tspeed_slow: 450ms;
+    --hue: 240;
+    --muted:var(--hue) 30% 99%;
+    --bg:var(--hue) 30% 70%;
+    --color:var(--hue) 30% 70%;
+    --controlopacity: 0;
 }
 
 html{scroll-behavior: smooth;}
-
 
 
 
@@ -49,6 +61,8 @@ html{scroll-behavior: smooth;}
 .header__nav__a:hover{
     color: whitesmoke
 }
+
+
 .header__nav__a::after{
     content: '';
     position: absolute;
@@ -64,13 +78,6 @@ html{scroll-behavior: smooth;}
     width: 100%;
 }
 
-.header__div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-}
-
 
 
 .header__input{
@@ -82,7 +89,12 @@ html{scroll-behavior: smooth;}
     border: 2px solid #ddd;
     background-repeat: no-repeat;
 }
-
+.header__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
 
 .main{
     height: 150vh;
@@ -125,7 +137,7 @@ img{
     font-weight: bold;
 }
 
-p{
+.cars{
     background-color: whitesmoke;
     border-radius: 23px;
     height: 25px;
@@ -134,13 +146,17 @@ p{
 
 }
 
-p:hover{
+.cars:hover{
     background-color: black;
     color: whitesmoke;
     font-size: 1rem;
 }
 
+
+
 .footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 3em;
     background-color: black;
 
@@ -153,6 +169,18 @@ p:hover{
     gap: 1em;
 }
 
+.footer__ul__image{
+    list-style-type: none;    
+    display: grid;
+  
+    gap: 1em;
+}
+
+.footer__ul__title{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+}
 .footer__ul__a{
     text-decoration: none;
     color: darkgray;
@@ -161,6 +189,13 @@ p:hover{
     background-color: black;
     border-radius: 10px;
 }
+
+
 .footer__ul__a:hover{
     color: whitesmoke;
+}
+
+.footer__ul__a__img{
+    border-radius: 10px;
+    background-color: whitesmoke;
 }

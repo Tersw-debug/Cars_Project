@@ -15,5 +15,6 @@ if(body){
                 <a href="/Html_files/login.html" class="header__nav__a">Log in</a>
                 <a href="/Html_files/signin.html" class="header__nav__a">Sign in</a>
              </div>
-    </header>`
+    </header>
+    `
 }

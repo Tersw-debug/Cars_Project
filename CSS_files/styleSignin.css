@@ -240,6 +240,7 @@ html{scroll-behavior: smooth;}
     background-color: hsl(var(--color));
     color: white;
 }
+
 .footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
