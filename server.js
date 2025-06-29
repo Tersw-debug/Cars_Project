@@ -7,6 +7,10 @@ app.get('/', (req,res) =>{
     res.send('Welcome to my static!');
 });
 
+app.get('/Html_files/HomePage.html', (req,res) => {
+    console.log(req);
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () =>{

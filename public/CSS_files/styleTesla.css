@@ -126,7 +126,7 @@ img{
 
 
 
-p{
+.cars{
     background-color: whitesmoke;
     border-radius: 23px;
     height: 25px;
@@ -135,7 +135,7 @@ p{
 
 }
 
-p:hover{
+.cars:hover{
     background-color: black;
     color: whitesmoke;
     font-size: 1rem;
@@ -143,6 +143,8 @@ p:hover{
 
 
 .footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 3em;
     background-color: black;
 
@@ -155,6 +157,18 @@ p:hover{
     gap: 1em;
 }
 
+.footer__ul__image{
+    list-style-type: none;    
+    display: grid;
+  
+    gap: 1em;
+}
+
+.footer__ul__title{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+}
 .footer__ul__a{
     text-decoration: none;
     color: darkgray;
@@ -163,6 +177,13 @@ p:hover{
     background-color: black;
     border-radius: 10px;
 }
+
+
 .footer__ul__a:hover{
     color: whitesmoke;
+}
+
+.footer__ul__a__img{
+    border-radius: 10px;
+    background-color: whitesmoke;
 }

@@ -1,3 +1,4 @@
+const body = document.getElementById('body');
 if(body){
     body.innerHTML += 
     `<footer class="footer">
@@ -15,9 +16,9 @@ if(body){
         </ul>
         <ul class="footer__ul__image">
             <div class="footer__ul__title"><p>Follow Us</p></div>
-            <li><a href="#" class="footer__ul__a"><img src="/public/Html_files/Images/social-media.png" alt="facebook" class="footer__ul__a__img" width="40px" height="40px"></a></li>
-            <li><a href="#" class="footer__ul__a"><img src="/public/Html_files/Images/twitter.png" alt="twitter" class="footer__ul__a__img" width="40px" height="40px"></a></li>
-            <li><a href="#" class="footer__ul__a"><img src="/public/Html_files/Images/youtube.png" alt="youtube" class="footer__ul__a__img" width="40px" height="40px"></a></li>
+            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/social-media.png" alt="facebook" class="footer__ul__a__img" width="40px" height="40px"></a></li>
+            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/twitter.png" alt="twitter" class="footer__ul__a__img" width="40px" height="40px"></a></li>
+            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/youtube.png" alt="youtube" class="footer__ul__a__img" width="40px" height="40px"></a></li>
         </ul>
         
     </footer>`
