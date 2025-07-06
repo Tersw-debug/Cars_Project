@@ -4,7 +4,7 @@ const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req,res) =>{
-    res.send('Welcome to my static!');
+    res.sendFile(path.join(__dirname, 'public','Html_files' ,'HomePage.html'));;
 });
 
 app.get('/Html_files/HomePage.html', (req,res) => {

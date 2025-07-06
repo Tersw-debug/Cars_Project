@@ -1,6 +1,9 @@
-if(body) {
-     body.innerHTML += `
-        <main class="main">
+
+
+
+    if(body) {
+     body.insertAdjacentHTML('beforeend',`
+        <main class="main" id='main'>
             <ul class="main__ul" id="items__ul">
                 <li class="main__ul__li" id="lie">
                     <a href="TeslaCars.html" class="main__ul__li__a">
@@ -8,7 +11,6 @@ if(body) {
                         <p class="cars">Tesla</p>
                         Our old model
                     </a>
-                    
                 </li>
                 <li class="main__ul__li" id="lie">
                     <a href="/Html_files/Bmwcars.html" class="main__ul__li__a">
@@ -32,15 +34,38 @@ if(body) {
                     </a>
                 </li>
             </ul>
-
-        </main>`
+        </main>
+    `);
 }
 
 
 
-const searchInput = document.getElementById("header__Input")
-let ul = document.getElementById("items__ul")
-let li = ul.getElementsByTagName('li')
+const searchInput = document.getElementById("header__Input");
+let ul = document.getElementById("items__ul");
+let li = ul.getElementsByTagName('li');
+let main = document.getElementById('main');
+
+function render(){
+    fetch("/JS_files/data.json")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(element => {
+                const list = document.createElement('ul');
+
+                list.innerHTML = `<li class="main__ul__li" id="lie">
+                <a href="TeslaCars.html" class="main__ul__li__a">
+                        <img src="${element.src}" alt="${element.alt}" height="225" width="225">
+                        <p class="cars">${element.modelname}</p>
+                        Our ${element.version}
+                    </a></li>`
+                console.log(list)
+                main.appendChild(list);
+            });
+            
+        })
+        .catch(error => console.log("Error through fetching data", error));
+}
+
 if(body) {
     searchInput.addEventListener("input", function(e) {
         const filter = e.target.value.toLowerCase()
@@ -60,4 +85,8 @@ if(body) {
         }
 
     })
+    render();
 }
+
+/*
+*/
