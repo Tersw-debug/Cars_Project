@@ -1,0 +1,29 @@
+[
+    {
+        "modelname": "Tesla" ,
+        "version":"old model",
+        "src": "/Html_files/Images/Tesla-727x852.png",
+        "alt":"Tesla logo"
+
+    },
+    {
+        "modelname": "BMW" ,
+        "version":"new model",
+        "src": "/Html_files/Images/bmw-2048x2048.png",
+        "alt":"Bmw logo"
+    },
+    {
+        "modelname": "Toyota" ,
+        "version":"new model",
+        "src": "/Html_files/Images/Toyota-225x225.png",
+        "alt":"Tyota logo"
+    
+    },
+    {
+        "modelname": "Mercedes" ,
+        "version":"new model",
+        "src": "/Html_files/Images/mercedes-2400x2400.png",
+        "alt":"Mercedes Logo"
+    
+    }
+]

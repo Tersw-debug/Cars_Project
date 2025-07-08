@@ -96,11 +96,15 @@ html{scroll-behavior: smooth;}
     padding: 0 2em;
 }
 
-.main{
-    height: 150vh;
-    padding: 2em;
-}
+.body {
+    display:flex;
+    flex-direction: column;    
+} 
 
+.main{
+    margin-top: 1em;
+    margin-bottom: 10em;
+}
 
 .main__ul{
     display: flex;

@@ -1,7 +1,7 @@
 
+const testing_body = document.getElementById("body")
 
-
-if(body){
+if(testing_body){
     body.innerHTML += 
     `<header class="header">
             <nav class = "header__nav">

@@ -1,4 +1,52 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById("header__Input");
+    let ul = document.getElementById("items__ul");
+    let li = ul.getElementsByTagName('li');
+    
+    function render(){
+    fetch("/JS_files/HomePagedata.json")
+    .then(response => response.json())
+    .then(data => {
+        let ul = document.getElementById("items__ul");
+        data.forEach(element => {
+            const list = document.createElement('li');
+            list.classList.add("main__ul__li");
+            list.id = "lie";
+            list.innerHTML = `<a href="TeslaCars.html" class="main__ul__li__a">
+                <img src="${element.src}" alt="${element.alt}" height="225" width="225">
+                <p class="cars">${element.modelname}</p>
+                Our ${element.version}
+                </a>`
+                // console.log(list)
+                ul.appendChild(list);
+            });
+            
+        })
+        .catch(error => console.log("Error through fetching data", error));
+    }
+    
+    if(body) {
+        searchInput?.addEventListener("input", function(e) {
+            const filter = e.target.value.toLowerCase()
+            let txtvalue;
+            for(let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName("a")[0]
+                
+                txtvalue = a.textContent || a.innerText;
+                if(txtvalue.toLowerCase().indexOf(filter) > -1) {
+                    li[i].style.display = ""
+                } else {
+                    li[i].style.display = "none"
+                }
+            }
+            
+        })
+        
+    }
+    render();
+});
 
+/*
 
 
     if(body) {
@@ -39,54 +87,4 @@
 }
 
 
-
-const searchInput = document.getElementById("header__Input");
-let ul = document.getElementById("items__ul");
-let li = ul.getElementsByTagName('li');
-let main = document.getElementById('main');
-
-function render(){
-    fetch("/JS_files/data.json")
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(element => {
-                const list = document.createElement('ul');
-
-                list.innerHTML = `<li class="main__ul__li" id="lie">
-                <a href="TeslaCars.html" class="main__ul__li__a">
-                        <img src="${element.src}" alt="${element.alt}" height="225" width="225">
-                        <p class="cars">${element.modelname}</p>
-                        Our ${element.version}
-                    </a></li>`
-                console.log(list)
-                main.appendChild(list);
-            });
-            
-        })
-        .catch(error => console.log("Error through fetching data", error));
-}
-
-if(body) {
-    searchInput.addEventListener("input", function(e) {
-        const filter = e.target.value.toLowerCase()
-        let txtvalue;
-        for(let i = 0; i < li.length; i++) {
-            let a = li[i].getElementsByTagName("a")[0]
-
-            txtvalue = a.textContent || a.innerText;
-            console.log(txtvalue)
-            console.log(filter)
-            console.log(a)
-            if(txtvalue.toLowerCase().indexOf(filter) > -1) {
-                li[i].style.display = ""
-            } else {
-                li[i].style.display = "none"
-            }
-        }
-
-    })
-    render();
-}
-
-/*
 */
