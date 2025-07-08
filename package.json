@@ -13,5 +13,13 @@
   },
   "author": "M&M",
   "license": "ISC",
-  "description": ""
+  "description": "this project is made as a training one to train on",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tersw-debug/Cars_Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tersw-debug/Cars_Project/issues"
+  },
+  "homepage": "https://github.com/Tersw-debug/Cars_Project#readme"
 }
