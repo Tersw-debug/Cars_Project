@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const list = document.createElement('li');
             list.classList.add("main__ul__li");
             list.id = "lie";
-            list.innerHTML = `<a href="TeslaCars.html" class="main__ul__li__a">
+            list.innerHTML = `<a href="${element.href}" class="main__ul__li__a">
                 <img src="${element.src}" alt="${element.alt}" height="225" width="225">
                 <p class="cars">${element.modelname}</p>
                 Our ${element.version}

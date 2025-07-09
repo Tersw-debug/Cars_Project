@@ -1,29 +1,36 @@
 [
     {
+        "id":"1",
         "modelname": "Tesla" ,
         "version":"old model",
         "src": "/Html_files/Images/Tesla-727x852.png",
-        "alt":"Tesla logo"
-
+        "alt":"Tesla logo",
+        "href":"TeslaCars.html"
     },
     {
+        "id":"2",
         "modelname": "BMW" ,
         "version":"new model",
         "src": "/Html_files/Images/bmw-2048x2048.png",
-        "alt":"Bmw logo"
+        "alt":"Bmw logo",
+        "href":"/Html_files/Bmwcars.html"
     },
     {
+        "id":"3",
         "modelname": "Toyota" ,
         "version":"new model",
         "src": "/Html_files/Images/Toyota-225x225.png",
-        "alt":"Tyota logo"
+        "alt":"Tyota logo",
+        "href":"/Html_files/toyotacars.html"
     
     },
     {
+        "id":"4",
         "modelname": "Mercedes" ,
         "version":"new model",
         "src": "/Html_files/Images/mercedes-2400x2400.png",
-        "alt":"Mercedes Logo"
+        "alt":"Mercedes Logo",
+        "href":"/Html_files/mercedescars.html"
     
     }
 ]

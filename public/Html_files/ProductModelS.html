@@ -1,97 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="/CSS_files/styleProductPage.css">
-</head>
-<body>
-    <header class="header">
-            <nav class = "header__nav">
-                <a href="/Html_files/newcars.html" class="header__nav__a">New Cars</a>
-                <a href="/Html_files/carsforsale.html" class="header__nav__a">Cars for Sale</a>
-                <a href="/Html_files/spareparts.html" class="header__nav__a">Spare Parts</a>
-                <a href="/Html_files/sellyourcar.html" class="header__nav__a">Sell Your Car</a>
-            </nav>
-             <input type="text" class="header__input" id="header__Input" placeholder="Search for names..">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Page</title>
+        <link rel="stylesheet" href="/CSS_files/styleProductPage.css">
+    </head>
+    <body id="body">
+        <script src="/JS_files/Header.js" ></script>
+        <main class="main">
 
-             <div class="header__div">
-                <a href="/Html_files/login.html" class="header__nav__a">Log in</a>
-                <a href="/Html_files/signin.html" class="header__nav__a">Sign in</a>
-             </div>
-    </header>
-    <main class="main">
-
-        
-        <div class="container">
-            <div class="product__name"><h1>Tesla Model S</h1></div>
-            <div class="container__image">
-                <img src="/Html_files/Images/modelS-760x435.png" alt="Tesla Model S" height="255" width="500">
-            </div>
             
-            <div class="container__price">
-              
-                <div class="container__cart">
-                    <div class="container__cart__title">
-                        <h2>Price: $79,990</h2>
-                    </div>
-                    <div class="container__cart__button">
-                            <button class="main__container__button_favorite">❤ Save</button>
-                        <button class="main__container__button_cart">Add to Cart</button>
-                    </div>
-                    
+            <div class="container">
+                <div class="product__name"><h1>Tesla Model S</h1></div>
+                <div class="container__image">
+                    <img src="/Html_files/Images/modelS-760x435.png" alt="Tesla Model S" height="255" width="500">
                 </div>
-                <div class="container__div__title"><p>Specifications</p></div>
-                <ul class="container_div__ul1">
-                    <div class="row-border"></div>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">State</div>used</li>
+                
+                <div class="container__price">
+                
+                    <div class="container__cart">
+                        <div class="container__cart__title">
+                            <h2>Price: $79,990</h2>
+                        </div>
+                        <div class="container__cart__button">
+                                <button class="main__container__button_favorite">❤ Save</button>
+                            <button class="main__container__button_cart">Add to Cart</button>
+                        </div>
+                        
+                    </div>
+                    <div class="container__div__title"><p>Specifications</p></div>
+                    <ul class="container_div__ul1">
+                        <div class="row-border"></div>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">State</div>used</li>
 
-                    <li  class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Range</div> 405 miles</li>
-                    <div class="row-border"></div>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Acceleration</div>0-60 mph in 1.99 seconds</li>
-                    
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Top Speed</div>200 mph</li>
-                    <div class="row-border"></div>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle"> Charging</div>SuperChatging Max 250kW</li>
+                        <li  class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Range</div> 405 miles</li>
+                        <div class="row-border"></div>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Acceleration</div>0-60 mph in 1.99 seconds</li>
+                        
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Top Speed</div>200 mph</li>
+                        <div class="row-border"></div>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle"> Charging</div>SuperChatging Max 250kW</li>
 
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Seating Capacity</div>5 adults</li>
-                    <div class="row-border"></div>
-                </ul>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Seating Capacity</div>5 adults</li>
+                        <div class="row-border"></div>
+                    </ul>
+                </div>
+                <div class="container__dimensions">
+                    <div class="container__dimensions__title"><p>Dimensions</p></div>
+                    <ul class="container_div__ul2">
+                        <div class="row-border"></div>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Weight (Curb Mass)</div>4,776lbs</li>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Cargo</div>28 cu ft</li>
+                        <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Wheels</div>19" or 21" option</li>
+                        <div class="row-border"></div>
+                    </ul>
+                </div>
+                
             </div>
-            <div class="container__dimensions">
-                <div class="container__dimensions__title"><p>Dimensions</p></div>
-                <ul class="container_div__ul2">
-                    <div class="row-border"></div>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Weight (Curb Mass)</div>4,776lbs</li>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Cargo</div>28 cu ft</li>
-                    <li class="container_div__ul__li"><div class="container_div__ul__li_wordstyle">Wheels</div>19" or 21" option</li>
-                    <div class="row-border"></div>
-                </ul>
-            </div>
-            
-        </div>
-    </main>
-    <footer class="footer">
-        <ul class="footer__ul">
-            <div class="footer__ul__title"><p>About US</p></div>
-            <li class="footer__ul__a"><p>☏0120001589</p></li>
-            <li class="footer__ul__a"><p>📩MinaForCars@gmail.com</p></li>
-            <li class="footer__ul__a"><p>Our work time from 9:00 AM to 12:00 PM</p></li>
-        </ul>
-        <ul class="footer__ul">
-            <div class="footer__ul__title"><p>Sections</p></div>
-            <li><a href="/Html_files/HomePage.html" class="footer__ul__a">Home</a></li>
-            <li><a href="#" class="footer__ul__a">Contact</a></li>
-            <li><a href="#" class="footer__ul__a">About</a></li>
-        </ul>
-        <ul class="footer__ul__image">
-            <div class="footer__ul__title"><p>Follow Us</p></div>
-            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/social-media.png" alt="facebook" class="footer__ul__a__img" width="40px" height="40px"></a></li>
-            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/twitter.png" alt="twitter" class="footer__ul__a__img" width="40px" height="40px"></a></li>
-            <li><a href="#" class="footer__ul__a"><img src="/Html_files/Images/youtube.png" alt="youtube" class="footer__ul__a__img" width="40px" height="40px"></a></li>
-        </ul>
+        </main>
         
-    </footer>
-</body>
+    </body>
+    <script src="/JS_files/Footer.js" defer></script>
+
 </html>
