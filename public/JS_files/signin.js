@@ -86,10 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let arr = ['']
     let append = false;
     if(form__signin){
-        form__signin.addEventListener("submit", function(event) {
+        form__signin.addEventListener("submit", async function(event) {
             event.preventDefault();
             let message__content = document.createElement("p");
-        if(input__username.value === '' || input__email.value === '' || input__password.value === '' || input__phone.value === '') {
+            if(input__username.value === '' || input__email.value === '' || input__password.value === '' || input__phone.value === '') {
                 message__error.style.display = "block";
                 message__content.textContent = "Please fill in all fields.";
                 message__content.style.setProperty("margin-right", "-6rem");

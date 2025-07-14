@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let ul = document.getElementById("items__ul");
     let li = ul.getElementsByTagName('li');
     
-    function render(){
+    async function render(){
     fetch("/JS_files/HomePagedata.json")
     .then(response => response.json())
     .then(data => {
